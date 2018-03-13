@@ -88,9 +88,10 @@ gulp.task("copy", function () {
     "src/img/*.{svg,png,jpg,gif}",
     "src/js/*.js",
     "src/*.html",
-    "favicon.ico",
-    "site.webmanifest",
-    "icon.png"
+    "src/favicon.ico",
+    "src/site.webmanifest",
+    "src/icon.png"
+
   ], {
       base: "src"
     })
