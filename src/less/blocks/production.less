@@ -6,7 +6,8 @@
   .lg-block({
     display: flex;
     justify-content: space-between;
-  padding-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: @white;
   });
 }
@@ -14,6 +15,10 @@
 .production__info {
   .col();
   .size-lg(8);
+
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
 }
 
 .production__header {
@@ -24,4 +29,34 @@
 .production__txt {
   .txt();
   padding-bottom: 30px;
+
+  span {
+    font-weight: 500;
+  }
 }
+
+.production__info-plus {
+  .col();
+  .size-lg(16);
+
+  padding-top: 100px;
+
+}
+
+.production__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.production__item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+
+.production__img {
+  width: auto;
+  height: auto;
+  margin-bottom: 30px;
+}
+

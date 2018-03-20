@@ -6,12 +6,46 @@
   .lg-block({
     display: flex;
     justify-content: space-between;
-    background-color: @bg;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-top: 1px solid @pink;
   });
 }
 
 .clientage__info {
   .col();
   .size-lg(8);
+
+  padding-bottom: 80px;
+}
+
+.clientage__header {
+  .header();
+}
+
+.clientage__txt {
+  .txt();
+  padding-right: 20px;
+}
+
+.clientage__person {
+  .col();
+  .size-lg(16);
+
+  padding-top: 50px;
+
+}
+
+.clientage__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.clietage__item {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 30px;
+  background-color: @white;
 }
 
