@@ -3,12 +3,12 @@ var smartgrid = require('smart-grid');
 /* It's principal settings in smart grid project */
 var settings = {
   outputStyle: 'less', /* less || scss || sass || styl */
-  columns: 12, /* number of grid columns */
-  offset: '30px', /* gutter width px || % */
-  mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+  columns: 24, /* number of grid columns */
+  offset: '12px', /* gutter width px || % */
+  mobileFirst: true, /* mobileFirst ? 'min-width' : 'max-width' */
   container: {
     maxWidth: '1200px', /* max-width оn very large screen */
-    fields: '30px' /* side fields */
+    fields: '12px' /* side fields */
   },
   breakPoints: {
     lg: {
@@ -19,10 +19,18 @@ var settings = {
     },
     sm: {
       width: '780px',
-      fields: '15px' /* set fields only if you want to change container.fields */
+      fields: '6px',
+      offset: '12px'/* set fields only if you want to change container.fields */
     },
     xs: {
-      width: '560px'
+      width: '560px',
+      fields: '6px',
+      offset: '6px'
+    },
+    xxs: {
+      width: '100px',
+      fields: '6px',
+      offset: '3px'
     }
     /*
     We can create any quantity of break points.

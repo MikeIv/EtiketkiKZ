@@ -1,9 +1,36 @@
 .main-nav {
+  .row-flex();
+
+  flex-direction: column;
   padding-top: 10px;
+
+  .lg-block({
+    .wrapper();
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  border-bottom: 1px solid @pink;
+  });
 
 }
 
 .main-nav__top {
+  .col();
+  .size-xxs(24);
+  .size-xs(24);
+  .size-sm(20);
+  .size-md(12);
+  .size-lg(3);
+
+  .lg-block({
+    min-height: 90px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  });
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -17,14 +44,29 @@
 
 .main-nav__mail {
   color: @pink;
+
+  .lg-block({
+    display: none;
+  });
 }
 
 .main-nav__list {
+  .col();
+  .size-lg(15);
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   background-color: @pink;
+
+  .lg-block({
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 60px;
+    margin: 0;
+    background-color: @white;
+  });
 }
 
 .main-nav__item {
@@ -34,6 +76,12 @@
   min-height: 51px;
   border-bottom: 1px solid @darkpink;
   border-top: 1px solid @lightpink;
+
+  .lg-block({
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+  });
 
   &--top {
     border-top: none;
@@ -45,10 +93,25 @@
     text-decoration: none;
     text-transform: uppercase;
     color: @white;
+
+    .lg-block({
+      font-size: 17px;
+      text-transform: none;
+      color: @gray;
+    });
   }
 }
 
+.main-nav__item-2 {
+  .lg-block({
+    order: -1;
+  });
+}
+
 .main-nav__section-view {
+  .col();
+  .size-lg(5);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,12 +119,22 @@
   min-height: 57px;
   background-color: @pink;
   border-top: 1px solid @darkpink;
+
+  .lg-block({
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+  });
 }
 
 .main-nav__phone-number {
   font-size: 20px;
   line-height: 24px;
   color: @white;
+
+  .lg-block({
+    font-size: 24px;
+  });
 }
 
 .main-nav__schedule {
