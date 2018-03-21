@@ -2,13 +2,14 @@
   .row-flex();
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
   width: auto;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 25px);
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   text-align: center;
 
   .lg-block({
@@ -26,7 +27,7 @@
   .col();
   .size-xxs(16);
 
-  margin-bottom: auto;
+  margin-bottom: 50px;
   font-size: 24px;
   line-height: 28px;
   color: @pink;
@@ -61,6 +62,7 @@
 }
 
 .intro__social {
+  margin-bottom: auto;
 
   .lg-block({
     margin-bottom: auto;

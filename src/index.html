@@ -68,7 +68,8 @@
 
 
 <header class="main-header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--opened main-nav--nojs">
+    <button class="main-nav__toggle" type="button"><span class="main-nav__nav-txt">Открыть меню</span></button>
     <ul class="main-nav__top wrapper">
       <li class="main-nav__logo-wrapper">
         <a class="main-nav__logo-link" href="#">
@@ -110,16 +111,16 @@
         <li class="intro__social-item"><a class="intro__social-link" href="#"><img src="img/icon-vk.svg" alt="вконтакте" width="36,77" height="21">vkontakte</a></li>
       </ul>
     </section>
+    <section class="nav-footer wrapper">
+      <h2 class="visually-hidden">Нижняя навигация</h2>
+      <ul class="nav-footer__list ">
+        <li class="nav-footer__item nav-footer__item--left"><a class="nav-footer__item-link" href="#">Заказать</a></li>
+        <li class="nav-footer__item"><a class="nav-footer__item-link" href="#">О компании</a></li>
+        <li class="nav-footer__item nav-footer__item--right"><a class="nav-footer__item-link" href="#">Отзывы</a></li>
+      </ul>
+    </section>
   </article>
 
-  <section class="nav-footer ">
-    <h2 class="visually-hidden">Нижняя навигация</h2>
-    <ul class="nav-footer__list wrapper">
-      <li class="nav-footer__item nav-footer__item--left"><a class="nav-footer__item-link" href="#">Заказать</a></li>
-      <li class="nav-footer__item"><a class="nav-footer__item-link" href="#">О компании</a></li>
-      <li class="nav-footer__item nav-footer__item--right"><a class="nav-footer__item-link" href="#">Отзывы</a></li>
-    </ul>
-  </section>
 
   <article class="prod-info wrapper">
     <section class="prod-info__intro">
@@ -129,37 +130,37 @@
     <section class="prod-info__interesting">
       <h2 class="visually-hidden">Интересные заметки</h2>
       <ul class="prod-info__list">
-        <li class="prod-info__item">
+        <li class="prod-info__item prod-info__item-01">
           <a сlass="prod-info__link" href="#">
             <h3 class="prod-info__section-head">История голограммы и голографии</h3>
             <p class="prod-info__section-txt">При изготовлении этикеток широко используют голограммы и голографии. Практически их невозможно подделать,...</p>
           </a>
         </li>
-        <li class="prod-info__item">
+        <li class="prod-info__item prod-info__item-02">
           <a сlass="prod-info__link" href="#">
             <h3 class="prod-info__section-head">Короткая история штрих-кода</h3>
             <p class="prod-info__section-txt">Не каждый покупатель, да и производитель тоже, знает, для чего на этикетке нужен штрих-код. А ведь он...</p>
           </a>
         </li>
-        <li class="prod-info__item">
+        <li class="prod-info__item prod-info__item-03">
           <a сlass="prod-info__link" href="#">
             <h3 class="prod-info__section-head">Материалы этикеток для бытовой химии</h3>
             <p class="prod-info__section-txt">Различные моющие и чистящие средства используются на протяжении длительного времени. Как...</p>
           </a>
         </li>
-        <li class="prod-info__item">
+        <li class="prod-info__item prod-info__item-04">
           <a сlass="prod-info__link" href="#">
             <h3 class="prod-info__section-head">Наклейки на бутылки</h3>
             <p class="prod-info__section-txt">Яркие и броские наклейки лучше других запоминаются, на них чаще обращают внимание. Производители бутылочной продукции давно...</p>
           </a>
         </li>
-        <li class="prod-info__item">
+        <li class="prod-info__item prod-info__item-05">
           <a сlass="prod-info__link" href="#">
             <h3 class="prod-info__section-head">Происхождение, развитие и использование QR-кода</h3>
             <p class="prod-info__section-txt">Для ограждения своего товара от подделок производитель обращается к различным методам...</p>
           </a>
         </li>
-        <li class="prod-info__item">
+        <li class="prod-info__item prod-info__item-06">
           <a href="#">
             <h3 class="prod-info__section-head">Этикетки на автохимию – о чем нужно знать</h3>
             <p class="prod-info__section-txt">Этикетка этикетке рознь, и это факт. С этикеточной продукцией для тех же продуктов питания и...</p>
@@ -292,19 +293,8 @@
 
 </footer>
 
+<script src="js/script.js"></script>
 
 
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
