@@ -6,6 +6,7 @@
 *.psd
 *.sublime*
 build/
+inbox/
 node_modules/
 npm-debug.*
 Thumbs.db
