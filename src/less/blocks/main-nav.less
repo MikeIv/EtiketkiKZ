@@ -43,7 +43,7 @@
   }
 
   .lg-block({
-   display: none;
+    display: none;
   });
 }
 
@@ -211,15 +211,37 @@
   border-bottom: 1px solid @darkpink;
   border-top: 1px solid @lightpink;
 
+  &--activ {
+    background-color: @lightpink;
+  }
+
   .lg-block({
     margin-right: 10px;
     margin-left: 10px;
     border: none;
+
+  &:hover {
+
+    a {
+      color: @pink;
+    }
+  }
+
+    &--activ {
+       background-color: @white;
+     }
+
+    &--activ .main-nav__item--link-activ {
+      font-weight: 500;
+      color: @pink;
+    }
   });
 
   &--top {
     border-top: none;
   }
+
+
 
   a {
     font-size: 21px;
@@ -236,6 +258,7 @@
   }
 }
 
+
 .main-nav__item-2 {
   .lg-block({
     order: -1;
@@ -251,7 +274,7 @@
   align-items: center;
   text-align: center;
   min-height: 57px;
-  background-color: @pink;
+  background-color: @darkpink;
   border-top: 1px solid @darkpink;
 
   .lg-block({
@@ -259,6 +282,20 @@
     padding-right: 10px;
     padding-left: 10px;
   });
+}
+
+.main-nav__hidden {
+  display: none;
+}
+
+.main-nav__index {
+
+  a {
+    font-size: 20px;
+    color: @white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 
 .main-nav__phone-number {

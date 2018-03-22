@@ -1,0 +1,34 @@
+.catalog {
+  padding-top: 50px;
+}
+
+.catalog__list {
+  .row-flex();
+  justify-content: space-around;
+}
+
+.catalog__item {
+  .col();
+  .size-xxs(10);
+
+  display: flex;
+  flex-direction: column;
+
+  width: 125px;
+  height: auto;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  background-color: @lightpink;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  a {
+    color: @white;
+    text-decoration: none;
+  }
+}

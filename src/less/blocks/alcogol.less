@@ -1,0 +1,53 @@
+.alcogol {
+  width: 100%;
+}
+
+.alcogol__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alcogol__img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    padding: 8px 30px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: @white;
+    background-color: @pink;
+    box-sizing: border-box;
+    border-radius: 0 10px  0 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.alcogol__img-01 {
+
+  &::before {
+    content: "Этикетки на алкоголь";
+  }
+
+}
+
+.alcogol__txt {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+
