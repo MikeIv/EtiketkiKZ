@@ -30,6 +30,17 @@
   box-sizing: border-box;
   background-color: fade(@lightpink, 5%);
 
+  &:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/quote.svg");
+    background-repeat: no-repeat;
+  }
+
   .xxs-block({
     padding-left: 10px;
   });
@@ -47,6 +58,25 @@
   font-style: italic;
   color: @gray;
 }
+
+.reviews__name {
+  align-self: flex-end;
+  padding-right: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.reviews__position {
+  align-self: flex-end;
+  padding-right: 30px;
+  font-size: 14px;
+  color: @lightgray;
+}
+
+.reviews__date {
+  font-size: 14px;
+}
+
 
 .reviews__img {
   display: block;
